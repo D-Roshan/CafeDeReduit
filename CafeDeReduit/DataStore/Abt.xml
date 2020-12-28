@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AboutUs xsi:noNamespaceSchemaLocation="Abt.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CafeName>Cafe de Reduit</CafeName>
+  <AboutUsInfo>Some Data About us... Tadada </AboutUsInfo>
+  <Founders>
+    <name born="1920" death="2010" Photo="FounderAmbanio.jpg">Mukesha Ambanio</name>
+    <name born="1899" >Amitesh Bheekhee</name>
+    <name born="1900">Dineshraj Boyjoo</name>
+  </Founders>
+  <address postalCode="BACNRD4152"> Bassin Canard, State House Avenue, Reduit Moka, Republic of Mauritius </address>
+<emails>
+<mail type="senior" > admin@reduitcafe.mu</mail>
+<mail type="sales" > sales@reduitcafe.mu</mail>
+<mail type="recruit" > recruitment@reduitcafe.mu</mail>
+<mail type="complaint" > contactUs@reduitcafe.mu</mail>
+</emails>
+</AboutUs>
