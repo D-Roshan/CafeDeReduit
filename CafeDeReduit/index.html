@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css//bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap CDN-->
+    <link href="css//index.css" rel="stylesheet"> <!-- Own CSS -->
+    <link href="css//StylingHome.css" rel="stylesheet"> <!-- Own CSS -->
+    <script src="js/jquery-3.4.1.min.js"> </script>
+    <script src="js/LoadCoffeeShopName.js"> </script>
+    <script src="js//HomePageBtnHandler.js"> </script>
+    <script src="js/LoadAdvertsOnHomePage.js"> </script>
+</head>
+
+<body onload="displayResult()">
+  
+    <div> 
+    <nav id="navBar" class="navbar navbar-expand-lg navbar-light " >
+       <p style="font-size: 20pt;padding-top: 5px; " id="cafeNameDisplay"> </p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 30%;">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" style="color: white;" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.php" style="color: white;">View Our Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">Place a reservation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="#" style="color: white;">Login</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          
+        </div>
+      </nav>
+  </div>
+
+    <div>
+        <img src="medias/coverImg.jpg" width="99%" height="550px"  alt="cover Image"/>
+    </div>
+<br/>
+
+<div id="example" > <!-- Data inserted using ajax xml-->
+</div>
+<br/>
+<div id="subcontentWeb" >
+
+<div> 
+<h2> Have a glance at our menus </h2> 
+<button type="button" id="Btnmenu" class="btn btn-success"> Access our menu </button> 
+<div class="btnTxtData" id="menuData" style="display: none;"> 
+
+  <h5> Here are our options: </h5>
+  <a class="links" href="menu.php?type=coffee">Coffee Selections</a> <br/>
+  <a  class="links" href="menu.php?type=resto">Restaurant menu</a> <br/>
+  <a  class="links" href="menu.php?type=dessert">Dessert Selections</a> <br/>
+  <a  class="links" href="menu.php"> View whole menu </a><br/>
+
+</div>
+
+</div>
+
+<hr style="background-color:rgb(143, 211, 33);"> 
+<br/>
+
+<div>
+  <h2> Reserve on a special date? </h2>
+  <button type="button" id="Btnorder" class="btn btn-info"> Place an order </button>
+  <div class="btnTxtData" id="orderData" style="display: none;"> <h4>Please note that this is a pre released service <br/> offered to Loyalty* card holders only</h4>
+  <a href=""  class="links text-muted" > Order in advance now from here </a>
+  </div>
+</div>
+<hr style="background-color:rgb(33, 104, 211);">
+ <br/> 
+
+ <div>
+  <h2> Connect with us </h2>
+  <button type="button" id="Btncontact" class="btn btn-danger"> Contact us </button>
+  <div class="btnTxtData" id="ContactData" style="display: none;"> <h5>You can fill in a form or contact us through mail!</h5>
+
+  <form name="contactUs" method="POST" action="processComplaint.php">
+
+    <input type="text"  name="name" placeholder="Enter your name" class="ComplaintFrmInputs"  size="40"> <div style="padding-bottom: 10px;"> </div>
+    <input type="text"  name="details" placeholder="Enter your message" size="40" class="ComplaintFrmInputs"> <br/> <div style="padding-bottom: 10px;"> </div>
+    <input type="submit" value="Send" class="btn btn-success">
+  </form> 
+<style>
+  .ComplaintFrmInputs{
+    padding-left:17px;
+  }
+</style>
+
+</div>
+</div>
+<hr style="background-color:rgb(211, 33, 42);">
+ <br/> 
+
+</div>
+
+
+
+<div id="footer">
+  &copy; Copyright <span id="cafeNameDisplayFooter">  </span>  </span><span id="currentYear"> 2020 </span>
+</div>
+
+</body>
+</html>

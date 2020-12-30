@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<Employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="IndexDbVerify.xsd">
+
+<person>
+<FirstName> John </FirstName>
+<LastName> Smith</LastName>
+<Position> Clerk</Position>
+<Department>Administration </Department>
+</person>
+
+<person>
+<FirstName> Rita </FirstName>
+<LastName> Koboshovsky</LastName>
+<Position> Programmer</Position>
+<Department> IT Department</Department>
+</person>
+
+<person>
+<FirstName> Jane </FirstName>
+<LastName> Doe</LastName>
+<Position> Project Manager</Position>
+<Department> IT Department</Department>
+</person>
+
+<person>
+<FirstName> Shane </FirstName>
+<LastName> Manilal</LastName>
+<Position> Manager</Position>
+<Department> Human Resource</Department>
+</person>
+
+</Employees>

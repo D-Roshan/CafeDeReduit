@@ -1,0 +1,12 @@
+#navBar{
+    background-color: rgb(49, 9, 9);
+    color: white;
+}
+ a{
+    color:white;
+}
+ a:hover{
+    color:grey;
+}
+
+
