@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="disp.xsl"?>
+<datas>
+
+<month>
+<monthName> January </monthName>
+<salesAmount>20000 </salesAmount>
+<profit>9586 </profit>
+</month>
+
+<month>
+<monthName> Febuary</monthName>
+<salesAmount> 24000</salesAmount>
+<profit> 12034</profit>
+</month>
+
+<month>
+<monthName> March</monthName>
+<salesAmount> 35000</salesAmount>
+<profit> 2000</profit>
+</month>
+
+<month>
+<monthName> April</monthName>
+<salesAmount> 67000</salesAmount>
+<profit> 1000</profit>
+</month>
+
+<month>
+<monthName> May</monthName>
+<salesAmount> 7000</salesAmount>
+<profit> 700</profit>
+</month>
+
+</datas>

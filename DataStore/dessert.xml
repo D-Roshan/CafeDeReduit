@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Desserts>
+
+<dessert id="1">
+<name>Classic Cheesecake</name>
+<type>nonveg</type>
+<description>A sweet dessert consisting of 5 more layers: a mixture of soft, fresh cheese, eggs, and sugar.with fresh coconut</description>
+<price>500 </price>
+<image>cheesecake.jpg </image>
+</dessert>
+
+
+
+<dessert id="2">
+<name>Sticky toffee pudding</name>
+<type>nonveg</type>
+<description>A very moist sponge cake, made with finely chopped dates, covered in a toffee sauce and served with a vanilla custard or vanilla ice-cream.</description>
+<price> 750</price>
+<image>Stickytoffeepudding.jpg </image>
+</dessert>
+
+<dessert id="3">
+<name>Mixed berry mousse</name>
+<type>veg</type>
+<description>Freshly made mousse from 5* chefs with mixed berries including blueberry and blackberry with a hint of lemon and mint</description>
+<price> 145</price>
+<image>Mixedberrymousse.jpg</image>
+</dessert>
+
+
+<dessert id="4">
+<name>Mango and coconut soufflé</name>
+<type>nonveg</type>
+<description>Egg-based dish coated with mango syrup and a sprinkle of fresh coconut </description>
+<price> 489</price>
+<image>MangoAndCoconutSoufflé.jpg</image>
+</dessert>
+
+<dessert id="5">
+<name>Vegan chocolate cake</name>
+<type>veg</type>
+<description>Moist chocolate cake slice accompanied with our special custard creme.</description>
+<price> 255.50</price>
+<image>VeganChocolateCake.jpg</image>
+</dessert>
+
+</Desserts>

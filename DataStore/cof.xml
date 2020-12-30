@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<coffees>
+
+<coffee id="1" type="cold">
+<name> Frappé coffee</name>
+<description>
+Our frappé coffee, Greek frappé is a Greek iced coffee drink made from pure columbian coffee, water, sugar, and milk.  
+</description>
+<price> 445.50</price>
+<img>frappe.jpg</img>
+</coffee>
+
+<coffee id="2" type="hot">
+<name> Cappuccino</name>
+<description>Our appuccino is an espresso-based coffee drink that originated in Italy, and is prepared with steamed milk foam with a hint of almond milk and vanilla extract . You can specify a design to our barrista if you wish. </description>
+<price> 560.50</price>
+<img>Cappuccino.jpg</img>
+</coffee>
+
+<coffee id="3" type="hot">
+<name> dalgona</name>
+<description>Our Dalgona coffee is a beverage made by whipping Italian coffee with sugar, and hot water until it becomes creamy and then adding it a hint of chocolate and some Marshmallow .</description>
+<price>685</price>
+<img>dalgona.jpg</img>
+</coffee>
+
+<coffee id="4" type="cold">
+<name> Americano</name>
+<description> Caffè Americano is a type of coffee drink prepared by diluting an espresso with hot water, giving it a similar strength to, but different flavor from, traditionally brewed coffee. </description>
+<price>460</price>
+<img>Americano.jpg</img>
+</coffee>
+
+</coffees>
