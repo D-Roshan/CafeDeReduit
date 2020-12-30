@@ -18,6 +18,4 @@ var xhttp = new XMLHttpRequest();
           document.getElementById("cafeNameDisplay").innerHTML = CafeName.nodeValue; 
           document.getElementById("cafeNameDisplayFooter").innerHTML = CafeName.nodeValue; 
           
-          
-          
       }

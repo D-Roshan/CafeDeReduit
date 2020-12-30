@@ -1,4 +1,19 @@
-<?php
+<?php session_start();
+
+        if(isset($_GET['order'])){
+
+            $orderVal=$_GET['order'];
+            //echo '<script> alert("ORDER '.$order.'"); </script>';
+
+            if($orderVal=="yes"){
+                $_SESSION['order']="yes";
+
+            }
+            else if($orderVal=="no"){
+                $_SESSION['order']="no";
+
+            }
+        }
 /*
 $xmlDoc = simplexml_load_file("DataStore\\test.xml") or die("Cannot load XML file");
 foreach($xmlDoc->children() as $data){
@@ -24,15 +39,16 @@ echo $xmlDoc->asXML();
 <!-- jquery -->
         <script> 
             function DisplayCoffee(){
-
+                //alert("Coffee displayed");
             $.ajax({url: "displayCoffee.php" , success : function(result){
                         $("#CoffeeMenu").html(result);
 
                     }});
             //Ajax call to display coffee menus
             }
-
+            
             function DisplayResto(){
+                //alert("Resto displayed");
 
             $.ajax({url: "DisplayResto.php" , success : function(result){
                         $("#RestoMenu").html(result);
@@ -42,7 +58,7 @@ echo $xmlDoc->asXML();
             }
 
             function DisplayDessert(){
-
+                //alert("Dessert displayed");
             $.ajax({url: "DisplayDessert.php" , success : function(result){
                         $("#DessertMenu").html(result);
 
@@ -78,7 +94,6 @@ echo $xmlDoc->asXML();
             });
         </script>
 
-
 <title> Our menus </title>
 <style>
 #foot{
@@ -106,16 +121,16 @@ echo $xmlDoc->asXML();
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 30%;">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" style="color: white;" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" style="color: white;" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white;">View Our Menu</a>
+                    <a class="nav-link" href="menu.php" style="color: white;">View Our Menu</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" style="color: white;">Place a reservation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"  href="#" style="color: white;">Login</a>
+                    <a class="nav-link"  href="login.php" style="color: white;">Login</a>
                 </li>            
             </ul>
 
@@ -135,7 +150,7 @@ echo $xmlDoc->asXML();
     <button id="RestoBtn" style="padding-right:15%; " class="btn btn-success"> Restaurant selections </button> 
     <button id="DessertBtn" style="padding-right:25%; " class="btn btn-success"> Dessert selections </button> 
     <div id="wholeMenu" style="padding-top:25px;"> 
-        <div id="CoffeeMenu">
+        <div id="CoffeeMenu" >
             
         </div>
         <div id="RestoMenu">
@@ -146,11 +161,32 @@ echo $xmlDoc->asXML();
         </div>
     </div>
     </div>
-<div style="padding-top:600px;"> </div>
+<div style="padding-top:300px;"> </div>
     <div id="foot">
         &copy; Copyright <span id="cafeNameDisplayFooter">  </span>  </span><span id="currentYear"> 2020 </span>
     </div>
 
+
+
+    <?php
+        if(isset($_GET['type'])){
+
+        $menuType=$_GET['type'];
+            if($menuType=="coffee"){
+                //echo "<script> alert('Coffee');</script>";
+                echo "<script>  DisplayCoffee(); </script>";
+            } else if($menuType=="resto"){
+                //echo "<script> alert('Resto');</script>";
+                echo "<script> DisplayResto(); </script>";
+            }
+            else if($menuType=="dessert"){
+                //echo "<script> alert('Dessert');</script>";
+                echo "<script> DisplayDessert(); </script>";
+            }
+        }
+
+
+    ?>
 
 
 </body>
